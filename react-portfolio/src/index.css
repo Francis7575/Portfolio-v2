@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: hsl(157, 44%, 93%)
+}
+
+.nav-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.underline-text {
+  background-image: linear-gradient(to right, hsl(10, 100%, 50%), hsl(10, 100%, 50%));
+  background-size: 100% 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #4add81, #43b2b9, #3c88ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-background {
+  background: linear-gradient(90deg, #FCA097, #FD9F96, #FF7B6E);
+}
+
+.gradient-background:hover {
+  background: linear-gradient(90deg, #FF7B6E, #FD9F96, #FCA097);
+}
+
+.absolute-position {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+}
+
+.bg-active {
+  background-color: rgba(108, 117, 125, 0.15);
+  padding: .4rem 1rem;
+  border-radius: 20px;
+}
+
+@media (min-width: 48em) {
+  .nav-menu {
+    top: 0;
+    bottom: auto;
+  }
+}
+
+@media (min-width: 64em) {
+  .nav-menu {
+    width: 170px;
+    height: 100%;
+  }
+
+  .absolute-position {
+    top: 7px;
+  }
+}
