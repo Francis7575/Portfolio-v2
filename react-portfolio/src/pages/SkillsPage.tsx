@@ -3,7 +3,7 @@ import { SkillsInfo } from "../components/Skills/Data"
 const SkillsPage = () => {
   return (
     <main className="md:mt-[3.5rem] lg:ml-[11rem] lg:pb-20 mb-[4rem] md:flex md:flex-col md:justify-center md:items-center md:h-screen">
-      <div className="flex flex-col items-center pb-20">
+      <div className="flex flex-col items-center pb-20 w-full">
         <h2 className="text-[1.6rem] lg:text-[2rem] font-semibold underline-text inline-block ml-6 mt-6">
           Skills
         </h2>
